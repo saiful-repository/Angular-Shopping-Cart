@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+.image-dim
+{
+    width:222px;
+    height:125px;
+}
+
+.qntyplus-minus {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 6px;
+  /* vertical-align: middle; */
+  background: purple;
+  border: none;
+}
+
+.item-delete {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  /* margin-right: 0px; */
+  /* vertical-align: middle; */
+  background: red;
+  margin-left: 66px;
+  border: none;
+}
+
+.qntyrow
+{
+    margin-left:120px;
+}
+
+.span-plus-minus {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn-shopping
+{
+
+}

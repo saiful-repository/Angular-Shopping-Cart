@@ -1,0 +1,14 @@
+
+  <div class="card mb-4 shadow-sm">
+    <img class="bd-placeholder-img card-img-top image-dim"  [src]="productItem.imageUrl" />    
+    <div class="card-body">
+      <p class="card-text">{{productItem.name}}</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-outline-secondary" (click)="addToCart()">Add to cart</button>          
+        </div>
+        <small class="text-muted">$ {{productItem.price | number: '.2'}}</small>
+      </div>
+    </div>
+  </div>
+

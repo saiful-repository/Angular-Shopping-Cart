@@ -1,0 +1,20 @@
+<div class="row">
+  <ul class="list-group mb-3">
+    <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <span class="text-muted">Your cart</span>
+      <span class="badge badge-secondary badge-pill" style="margin:4px;">{{carts.length}}</span>
+    </li>
+  </ul>
+</div>
+<div class="row" *ngIf="carts.length>0">
+  <ul class="list-group mb-3">
+    <li class="list-group-item d-flex justify-content-between lh-condensed" *ngFor="let cartitem of carts; let i = index">
+      <app-shopping-cart-item [cartItem]="cartitem" [index]="i" (quantityIncrease)="quantityIncrease($event)" (quantityDecrease)="quantityDecrease($event)" (deleteCartItem)="deleteCartItem($event)"></app-shopping-cart-item>
+    </li>
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Total (USD):</span>
+      <strong>&nbsp;&nbsp;{{total | number: '.2' }}</strong>
+    </li>
+  </ul>
+
+</div>

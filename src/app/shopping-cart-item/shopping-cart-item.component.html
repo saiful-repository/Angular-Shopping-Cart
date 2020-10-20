@@ -1,0 +1,9 @@
+<div>
+  <h6 class="my-0">{{cartItem.productName}}  <button class="item-delete" (click)="calldeleteCartItem()">X</button></h6>
+  <small class="text-muted">${{cartItem.productPrice | number: '.2'}} x {{cartItem.quantity}}</small>  
+</div>
+<span class="text-muted">Sub total: ${{cartItem.productPrice * cartItem.quantity | number: '.2'}}</span>
+<div class="row qntyrow">
+  <button class="qntyplus-minus" (click)="callquantityIncrease()"><span class="span-plus-minus">+</span></button>
+  <button class="qntyplus-minus" (click)="callquantityDecrease()"><span class="span-plus-minus">-</span></button>
+</div>
